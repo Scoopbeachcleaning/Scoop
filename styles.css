@@ -83,12 +83,27 @@ footer {
   text-align: center;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; /* Aligns the images vertically in the center */
+  flex-wrap: wrap; /* Allows images to wrap onto the next line on smaller screens */
 }
 
 #home img {
-  height: 200px; /* Example fixed height */
-  width: auto; /* Keeps the aspect ratio intact */
+  max-width: 15%;
+  height: auto;
+  margin: 0 10; /* This centers the image within its container */
+  margin-bottom: 20px; /* Add space between the stacked images */
+  }
+}
+
+@media (max-width: 768px) {
+  #home {
+    flex-direction: column; /* Stack images vertically on smaller screens */
+  }
+
+  #home img {
+    max-width: 80%; /* Allows images to be a bit smaller on small screens */
+    margin: 10px auto; /* Adds space above and below each image, and centers them */
+  }
 }
 
 section {
@@ -151,13 +166,9 @@ section {
   max-width: 100%; /* Ensures the poster is responsive within its container */
   height: auto; /* Maintains aspect ratio */
 }
+  
 
 
-
-@media (max-width: 768px) {
-  .flex-container {
-    flex-direction: column;
-  }
 
   nav ul li a img {
     width: 20px; /* Adjust for smaller screens */
