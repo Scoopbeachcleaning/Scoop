@@ -82,14 +82,16 @@ footer {
   padding: 50px 20px; /* Increase padding for more space */
   text-align: center;
   display: flex;
-  justify-content: center;
+  justify-content: space-around; /* Distributes space evenly between and around images */
   align-items: center; /* Aligns the images vertically in the center */
   flex-wrap: wrap; /* Allows images to wrap onto the next line on smaller screens */
 }
 
 #home img {
-  max-width: 15%;
+  max-width: 23%;
+  width: 100%; /* Allows the images to be fully responsive within their flex item */
   height: auto;
+  flex-shrink: 1; /* Allows the images to shrink to prevent overlap */
   margin: 0 10; /* This centers the image within its container */
   margin-bottom: 20px; /* Add space between the stacked images */
   }
