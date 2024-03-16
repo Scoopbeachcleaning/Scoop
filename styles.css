@@ -115,11 +115,11 @@ section {
 }
 
 #palmleft {
-  transform: translateX(-80px); /* Moves the left image to the right */
+  transform: translateX(-30px); /* Moves the left image to the right */
 }
 
 #palmright {
-  transform: translateX(80px); /* Moves the right image to the left */
+  transform: translateX(30px); /* Moves the right image to the left */
 }
 
 #donate {
